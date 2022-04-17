@@ -1,0 +1,8 @@
+.searchInput::placeholder {
+  color: white !important;
+}
+
+.searchInput:focus {
+  width: 300px !important;
+  /* transition: width 0.3s ease; */
+}

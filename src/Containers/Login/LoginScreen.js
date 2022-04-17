@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { UserActions } from 'src/Stores';
 
 import { LoginMiddleView } from 'src/Components';
 
@@ -74,8 +73,7 @@ export default connect(
   (dispatch) =>
     bindActionCreators(
       {
-        setToken: UserActions.setToken,
-        login: UserActions.login,
+
       },
       dispatch,
     ),

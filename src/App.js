@@ -5,7 +5,6 @@ import { bindActionCreators } from 'redux';
 
 import RoutePage from './routes/RoutePage';
 import UnRoutePage from './routes/UnRoutePage';
-import { UserActions } from 'src/Stores';
 import 'reset-css';
 import 'react-chat-elements/dist/main.css';
 import 'react-dates/initialize';
@@ -29,14 +28,14 @@ class App extends Component {
         isShow: true,
       });
     }
-    window.addEventListener('resize', this.handleSize);
+    // window.addEventListener('resize', this.handleSize);
     // getUserInfo(callback);
   }
 
 
   componentWillUnmount() {
     // 移除监听事件
-    window.removeEventListener('resize', this.handleSize);
+    // window.removeEventListener('resize', this.handleSize);
   }
 
   // 自适应浏览器的高度
@@ -83,7 +82,7 @@ class App extends Component {
     const { user } = this.props;
     return (
       <div style={{ width: '100vw', height: '100vh' }}>
-        {!_.isEmpty(user.Token) ? <RoutePage role_id={user.role_id} /> : <UnRoutePage />}
+        <RoutePage />
       </div>
     );
   }
@@ -91,13 +90,12 @@ class App extends Component {
 
 export default connect(
   (state) => ({
-    isMobile: state.user.isMobile,
+
   }),
   (dispatch) =>
     bindActionCreators(
       {
-        getUserInfo: UserActions.getUserInfo,
-        setMobile: UserActions.setMobile,
+
       },
       dispatch,
     ),

@@ -7,7 +7,7 @@ import { DataTable, Search } from 'src/Components';
 import { Images, Colors } from 'src/Theme';
 
 import "./SuperUserScreen.css"
-import { UserActions, SuperUserActions } from 'src/Stores';
+import { SuperUserActions } from 'src/Stores';
 import FormInput from '../../Components/common/FormInput';
 
 
@@ -637,16 +637,12 @@ class SuperUserScreen extends React.Component {
 export default connect(
   (state) => ({
     class: state.class,
-    userList: state.user.userList,
     superUserList: state.superUser.list,
     paging: state.superUser.paging,
-    user_id: state.user.user_id,
   }),
   (dispatch) =>
     bindActionCreators(
       {
-        getUserList: UserActions.getUserList,
-        deleteUser: UserActions.deleteUser,
         getSuperUserList: SuperUserActions.getSuperUserList,
         createSuperUser: SuperUserActions.createSuperUser,
         updateSuperUser: SuperUserActions.updateSuperUser,
