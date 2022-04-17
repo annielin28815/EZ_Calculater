@@ -1,0 +1,87 @@
+.ant-select-selector {
+  height: 40px !important;
+  border-radius: 5px !important;
+}
+/* .ant-form-item-label > label {
+  color: #7d9eb5 !important;
+} */
+
+/*checkDelete*/
+.swal2-icon.swal2-warning {
+  background-color: #e21d53 !important;
+  color: #fff !important;
+  border: 0px !important;
+}
+.ant-descriptions .ant-descriptions-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.ant-descriptions-item-container .ant-descriptions-item-content {
+  color: #035a18;
+  font-size: 16px;
+}
+.ant-descriptions-item-container .ant-descriptions-item-content .ant-btn {
+  margin-right: 20px;
+}
+/* 彈窗樣式 */
+.ant-modal-header {
+  background: #035a18 !important;
+}
+.ant-modal-header .ant-modal-title {
+  color: #fff !important;
+  font-size: 24px !important;
+}
+.ant-modal-body {
+  background: #f7fff1 !important;
+  font-size: 16px !important;
+}
+.ant-modal-close {
+  background: #658d19 !important;
+  height: 54px !important;
+}
+.ant-modal-close .ant-modal-close-x {
+  color: #fff !important;
+}
+.ant-row {
+  margin-bottom: 16px !important;
+}
+.ant-row .ant-form-item {
+  margin: 0px !important;
+}
+.ant-form-item-label > label {
+  color: #3d3d3b !important;
+  font-weight: bold;
+  font-size: 16px !important;
+}
+/* delete btn popconfirm */
+.ant-popover-message-title {
+  font-size: 16px !important;
+}
+
+.ant-popover-inner-content {
+  --main-color: #0d902c;
+  padding: 8px 24px !important;
+}
+.ant-popover-inner-content .ant-popover-message {
+  color: var(--main-color) !important;
+  font-size: 14px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.ant-popover-inner-content .ant-popover-buttons .ant-btn:first-child {
+  border-radius: 5px !important;
+  color: var(--main-color) !important;
+  font-size: 14px !important;
+  border: 1px solid #0d902c !important;
+}
+.ant-popover-inner-content .ant-popover-buttons .ant-btn:last-child {
+  border-radius: 5px !important;
+  color: #fff !important;
+  background: var(--main-color) !important;
+  font-size: 14px !important;
+}
+.ant-btn-sm {
+  height: 100% !important;
+}
