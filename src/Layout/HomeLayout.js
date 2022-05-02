@@ -74,7 +74,7 @@ class HomeLayout extends React.Component {
   }
 
   render() {
-    const {} = this.props;
+    const { children } = this.props;
 
     const {} = this.state;
 
@@ -120,14 +120,14 @@ class HomeLayout extends React.Component {
             })}
           </Menu>
         </Header>
-        <Content style={{ padding: '0 50px' }}>
-          <Breadcrumb style={{ margin: '16px 0' }}>
-            <Breadcrumb.Item>功能介紹</Breadcrumb.Item>
-            <Breadcrumb.Item>響應式尺寸換算器</Breadcrumb.Item>
-            <Breadcrumb.Item>色碼轉換器</Breadcrumb.Item>
-          </Breadcrumb>
-          <div className="site-layout-content" style={{height: document.documentElement.clientHeight - 350}}>Content</div>
-        </Content>
+        <div style={{ padding: '0 50px' }}>
+          <div 
+            className="site-layout-content" 
+            style={{height: document.documentElement.clientHeight - 350}}
+          >
+            {children}
+          </div>
+        </div>
         <Footer style={{ textAlign: 'center' }}>Ling Design ©2022</Footer>
       </Layout>
     );
